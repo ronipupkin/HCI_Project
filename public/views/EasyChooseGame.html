@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Game</title>
+    <link rel="stylesheet" href="../static/StyleSheet.css">
+    <script defer src="../static/JS.js"></script>
+</head>
+<body>
+    <div class="chooseGame_container">
+        <div class="NavTasks">
+            <nav class="nav1">
+                <ul class="nav-list">
+                    <li class="list-item"><a href="../views/Instructions.html"><img src="../static/practiceLogo.png" alt="practice" class="navIcons"></a></li>
+                    <li class="list-item"><a href="../views/Nearme1.html"><img src="../static/nearMeLogo.png" alt="nearMe" class="navIcons"></a></li>
+                    <li class="list-item"><a href="../views/Learn_ChooseGender.html"><img src="../static/learnLogo.png" alt="learn" class="navIcons"></a></li>
+                    <li class="list-item"><a ><img src="../static/profileLogo.png" alt="profile" class="navIcons" onclick="hoverProfile(this);" onmouseout="unhoverProfile(this);"></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="NavLogo">
+            <nav class="nav2">
+                <ul class="nav-list">
+                    <li class="list-item"><a href="../views/3Tasks.html"><img src="../static/navLogo.png" alt="Logo" class="navLogoIcon"></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="TitleBar">
+            <div class="backPracticeArrow">
+                <a href="./Levels.html"><img src="../static/backPracticeArrow.png" alt="backArrow"></a>
+            </div>
+            <div class="TitleLevels"><p>Easy</p></div>
+        </div>
+        <div class="Body">
+            <div class="SelectDiv">
+                <select name="Croswords" id="Crosword-select" class="selectList">
+                    <option value="">--Choose Subject--</option>
+                    <option value="Diseases">Diseases</option>
+                    <option value="Medicines">Medicines</option>
+                    <option value="Hormones">Hormones</option>
+                </select>
+            </div>
+            <div class="Croswords">
+                <div class="chooseCrosword" >
+                    <a href="./Game.html">
+                        <img src="../static/crosword.png" alt="crosword">
+                        <p class="croswordSubject">Diseases 0/19</p>
+                    </a>
+                </div>
+                <div class="chooseCrosword">
+                    <div class="croswordImg">
+                        <img src="../static/crosword.png" alt="crosword"  onclick="hoverGame(this)" onmouseout="unhoverGame(this)">
+                    </div>
+                    <div class="croswordSubject">
+                        <p>Medicines 0/19</p>
+                    </div>
+                </div>
+                <div class="chooseCrosword">
+                    <div class="croswordImg">
+                        <img src="../static/crosword.png" alt="crosword"  onclick="hoverGame(this)" onmouseout="unhoverGame(this)">
+                    </div>
+                    <div class="croswordSubject">
+                        <p>Hormones 0/19</p>
+                    </div>
+                </div>
+                <div class="chooseCrosword">
+                    <div class="croswordImg">
+                        <img src="../static/crosword.png" alt="crosword"  onclick="hoverGame(this)" onmouseout="unhoverGame(this)">
+                    </div>
+                    <div class="croswordSubject">
+                        <p>Diseases 0/19</p>
+                    </div>
+                </div>
+                <div class="chooseCrosword">
+                    <div class="croswordImg">
+                        <img src="../static/crosword.png" alt="crosword"  onclick="hoverGame(this)" onmouseout="unhoverGame(this)">
+                    </div>
+                    <div class="croswordSubject">
+                        <p>Medicines 0/19</p>
+                    </div>
+                </div>
+                <div class="chooseCrosword">
+                    <div class="croswordImg">
+                        <img src="../static/crosword.png" alt="crosword"  onclick="hoverGame(this)" onmouseout="unhoverGame(this)">
+                    </div>
+                    <div class="croswordSubject">
+                        <p>Hormones 0/19</p>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+        
+    </div>
+    
+</body>
+</html>

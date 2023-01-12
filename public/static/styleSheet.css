@@ -1,0 +1,696 @@
+
+@media only screen and (max-width: 500px){
+  :root { 
+
+    --MyBlack: 	#000000;
+    --MyWhite:	#FFFFFF;
+    --MyDarkerBlue: #2F357D;
+    --MyLightBlue: #dbf1f1;
+    --MyLighterYellow: #e5e9d4;
+    --MyGreyBlue2: #9bc5db;
+    --MyGreyBlue: #c6d8e2;
+    --MyLight:  #a4badc; 
+    --MyOrangePink: #FFC299;
+    --MyDarkerPurple: #8630d1;
+    --MyGrey: #e4e4e4;
+    --MyDarkGrey:#B7B4B4;
+    --MyLogoBackground : #FCFEE8;
+    --MyLogoBackgroundDarker : #ebeed3;
+    --MyLectureBack: #FCFEE8;
+    --inverted-corners-size: 11rem;
+    --inverted-corners-background: #d1d5db;
+
+  }
+
+  * {
+    box-sizing: border-box; 
+    text-align: center;
+    font-family: sans-serif;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .OrSignApps{
+    margin-top: 5%;
+  }
+
+  .logo{
+    grid-area: logo;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40vw;
+    height: 15vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .signInWith{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+
+  .genderIcons{
+    width: 150px;
+    height: 150px;
+    border-radius: 70px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10PX;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  }
+
+  a.FAQ{
+    font-size: 25px;
+    margin: 5%;
+  }
+
+  .Header{
+    background-color: var(--MyLogoBackground);
+    margin: 0px 0px 0px 0px;
+    border-bottom-right-radius: -25px 50%;
+  }
+
+  .Body{
+    background-color: var(--MyWhite);
+    border-radius: 15px 50px 30px 5px;
+  }
+
+  .Title{
+    color: var(--MyDarkerBlue);
+    font-weight: bold;   
+    font-size: 35px;
+    margin-bottom: 3vh;
+    margin-top: 3vh;
+  }
+
+  .changeLog{
+    font-weight: bold;  
+    font-size: 15px;
+  }
+
+  .input{
+    background-color: var(--MyGrey);
+    border: 2px solid var(--MyGrey);
+    border-radius: 8px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 12px 15px;
+    font-size: 15px;
+    margin-top: 2%;
+    text-align: left;
+    width: 50%;
+  }
+
+  .Sign_button, .playButton, .SignIn_button, .SignUp_button{
+    border-radius: 8px;
+    background-color: var(--MyDarkerBlue);
+    border: 2px solid var(--MyDarkerBlue);
+    color: var(--MyWhite);
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 12px 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 5%;
+    width: 40vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    overflow-wrap: break-word;
+  }
+
+  .Sign_button{
+    padding: 7vh 15px;
+  }
+
+
+
+  .BackLecturs{
+    background-color: var(--MyOrangePink);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    border-color: var(--MyOrangePink);
+    font-size: 15px;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 10px 12px;
+  }
+
+  .LevelsButton{
+    border-radius: 8px;
+    background-color: var(--MyDarkerBlue);
+    border: 2px solid var(--MyDarkerBlue);
+    color: var(--MyWhite);
+    letter-spacing: 2px;
+    padding: 12px 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 2%;
+    width: 40vw;
+    height: 20vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  }
+
+  button:disabled{
+    background-color: var(--MyGreyBlue);
+    border: 2px solid var(--MyGreyBlue);
+    cursor: auto;
+  }
+
+  .nav1 {
+    font-weight: bold;   
+    font-size: 17px;
+  }
+  
+  
+  .nav1 .nav-list {
+    text-align: right;
+    align-items: center;
+    margin-top: 10px;
+    padding: 0px 0px 0px 0px;
+    margin-top: 0px;
+    margin-right: 2%;
+  }
+
+  .nav2 .nav-list {
+    text-align: left;
+    align-items: center;
+    margin-top: 10px;
+    padding: 0px 0px 0px 0px;
+    margin-top: 0px;
+    margin-left: 2%;
+  }
+  
+  .nav-list .list-item{
+    display: inline-block;
+    padding: 5px;
+    cursor: pointer;
+  }
+
+  .NavTasks{
+    text-align: right;
+    grid-area: NavTasks;
+    height:10vh;
+  }
+
+  .NavLogo{
+    text-align: left;
+    grid-area: NavLogo;
+    height: 10vh;
+  }
+
+  .Body{
+    grid-area: Body;
+  }
+
+  .signUp_container{
+    display: grid;
+    grid-template-areas: 
+    'Header'
+    'Body';
+  }
+
+  .signIn_container{
+    display: grid;
+    grid-template-areas: 
+    'Header'
+    'Body';
+  }
+
+  .Instructions_container, .chooseGender_container, .Topics_container, .Categories_container, .Nearme_container, .Lectures_container{
+    display: grid;
+    grid-template-areas: 
+    'NavLogo NavTasks'
+    'Body Body';
+  }
+
+  .Lecture_container{
+    display: grid;
+    grid-template-areas: 
+    'NavLogo NavTasks'
+    'lectureTitles lectureTitles'
+    'Body Body';
+  }
+
+  .Levels_container, .chooseGame_container, .Game_container{
+    display: grid;
+    grid-template-areas: 
+    'NavLogo NavTasks'
+    'TitleBar TitleBar'
+    'Body Body';
+  }
+  
+  .chooseGame_container .Body{
+    display: grid;
+    grid-template-areas: 
+    'selectList'
+    'Croswords';
+  }
+
+  .backArrow{
+    grid-area: backArrow;
+    cursor: pointer;
+    text-align: left;
+    width: 7vw;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .Learn_Title{
+    color: var(--MyDarkerBlue);
+    font-weight: bold;   
+    font-size: 35px;
+    margin-bottom: 20px;
+    grid-area: Learn_Title;
+    text-align: left;
+    margin-left: 2%;
+  }
+
+  .selectList{
+    grid-area: selectList;
+    font-size: 15px;
+    border-radius: 20vh;
+    background-color: var(--MyLightBlue);
+  }
+
+  .Croswords{
+    grid-area: Croswords;
+    overflow: auto;
+  }
+
+  .Croswords .chooseCrosword{
+    display: inline-block;
+    text-align: center;
+    width: 25vw;
+  }
+
+  .TitleBar{
+    color: var(--MyWhite);
+    background-color: var(--MyDarkerBlue);
+    grid-area: TitleBar;
+    display: grid;
+    grid-template-areas: 
+    'backPracticeArrow TitleLevels';
+    height: 6vh;
+    margin-bottom: 2%;
+  }
+
+  .backPracticeArrow{
+    grid-area: backPracticeArrow;
+    text-align: left;
+    margin-left: 5%;
+    width: 10vw;
+    cursor: pointer;
+    place-self: center;
+  }
+
+  .TitleLevels{
+    grid-area: TitleLevels;
+    font-size: 20px;
+    place-self: center;
+    width: 90vw;
+  }
+
+  .TitleLevels p{
+    margin: 2%;
+    text-align: left;
+  }
+
+  .SubTitle{
+    grid-area: SubTitle;
+    text-align: left;
+    margin-left: 2%;
+  }
+
+  .Lectures{
+    grid-area: Lectures;
+    text-align: left;
+  }
+
+  .LearnButtons{
+    grid-area: LearnButtons;
+  }
+
+  .divLectureNumber{
+    grid-area: divLectureNumber;
+    width: 10vw;
+    margin-left: 15%;
+    margin-top: 20%;
+    margin-bottom: 20%;
+  }
+
+  .lectureNumber{
+    color: var(--MyDarkGrey);
+    font-size: 30px;
+    text-align: left;
+    font-weight: bold;  
+
+  }
+
+  .divLectureTime{
+    grid-area: divLectureTime;
+    place-self: center;
+    width: 65vw;
+
+  }
+
+  .lectureTime{
+    color: var(--MyDarkGrey);
+    font-weight: bold; 
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  .divLectureTitle{
+    grid-area: divLectureTitle;
+    place-self: center;
+    width: 65vw;
+
+  }
+
+  .lectureTitle{
+    overflow-wrap: break-word;  
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: medium;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  .divLectureButton{
+    grid-area: divLectureButton;
+    place-self: center;
+    width: 10vw;
+    margin-right: 15%;
+    margin-top: 20%;
+    margin-bottom: 20%;
+  }
+
+  .lectureBack{
+    grid-area: lectureBack;
+    cursor: pointer;
+    place-self: center;
+    width: 10vw;
+  }
+
+
+  .LectureNumberTitle{
+    grid-area: LectureNumberTitle;
+    font-size: 35px;
+    color: var(--MyOrangePink);
+    font-weight: bold; 
+    margin: 5px;
+  }
+
+  .lectureNext{
+    grid-area: lectureNext;
+    cursor: pointer;
+    place-self: center;
+    width: 10vw;
+  }
+
+  .readLectureButton{
+    background-color: var(--MyDarkGrey);
+    border-radius: 15px;
+    border: solid var(--MyDarkGrey);
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .chooseCrosword{
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    width: 40vw;
+    border-radius: 20px;
+    margin: 2.5%;
+  }
+
+  .croswordSubject{
+    background-color: var(--MyDarkerBlue);
+    color: var(--MyWhite);
+    border-radius: 0px 0px 20px 20px;
+    padding: 1%;
+    font-size: 15px;
+  }
+
+
+
+
+  .LecturePageTitle{
+    grid-area: LecturePageTitle;
+    font-weight: bold; 
+    margin: 5px;
+    font-size: 17px;
+  }
+
+
+  .Topics_container .Body, .Categories_container .Body{
+    display: grid;
+    grid-template-areas: 
+    'backArrow Learn_Title Learn_Title Learn_Title Learn_Title' 
+    'backArrow SubTitle SubTitle SubTitle SubTitle'
+    'LearnButtons LearnButtons LearnButtons LearnButtons LearnButtons';
+  }
+
+  .Lectures_container .Body{
+    display: grid;
+    grid-template-areas: 
+    'backArrow Learn_Title Learn_Title Learn_Title Learn_Title' 
+    'backArrow SubTitle SubTitle SubTitle SubTitle'
+    'Lectures Lectures Lectures Lectures Lectures';
+  }
+
+  .lectureTitles{
+    grid-area: lectureTitles;
+    background-color: var(--MyLectureBack);
+    display: grid;
+    grid-template-areas: 
+    'lectureBack LectureNumberTitle LectureNumberTitle lectureNext' 
+    'lectureBack LecturePageTitle LecturePageTitle lectureNext';
+  }
+
+  .Lecture{
+    border-radius: 20px;
+    background-color: var(--MyLogoBackground);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    border: 2px solid var(--MyLogoBackgroundDarker);
+    display: grid;
+    grid-template-areas: 
+    'divLectureNumber divLectureTitle divLectureTitle divLectureButton' 
+    'divLectureNumber divLectureTime divLectureTime divLectureButton';
+  }
+
+  .arrowRight{
+    border: 3px solid var(--MyWhite);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+
+  .InstructionsText{
+    color: var(--MyDarkerBlue);
+    font-size: 20px;
+    padding: 3px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .InstructionsSubTitle{
+    color: var(--MyDarkerBlue);
+    font-size: 20px;
+    padding: 3px;
+    font-weight: bold; 
+  }
+
+
+/* CROSSWORD */
+
+.Game_container .Body .cwp_q_container{
+  display: grid;
+    grid-template-areas: 
+    'cwp_h4_q cwp_h4_q'
+    'cwp_h5_q_down cwp_h5_q_across' 
+    'cwp_q_down_container cwp_q_across_container';
+}
+
+
+#hintButton{
+  border-radius: 10px;
+  border: 3px solid var(--MyGreyBlue2);
+  background-color: var(--MyGreyBlue);
+  font-size: 15px;
+  cursor: pointer;
+  margin: 3%
+}
+
+@CHARSET "ISO-8859-1";
+
+#cwp_container {
+  grid-area: cwp_container;
+  place-self: center;
+
+  display: grid;
+    grid-template-areas: 
+    'cwp_p_container'
+    'cwp_b_container' 
+    'cwp_q_container';
+}
+
+#cwp_p_container {
+	margin: 2%;
+  grid-area: cwp_p_container;
+}
+
+#cwp_q_container {
+	width: 39%;
+  place-self: center;
+  grid-area: cwp_q_container;
+}
+
+.cwp_b_container {
+  margin: 1%;
+  place-self: center;
+  height: auto;
+  grid-area: cwp_b_container;
+}
+
+.cwp_h4_q{
+  grid-area: cwp_h4_q;
+  margin-top: 5%;
+  text-align: center;
+  text-decoration-line: underline;
+  font-size: 25px;
+}
+
+.cwp_h5_q_down, .cwp_h5_q_across {
+	position: relative;
+  font-size: 20px;
+}
+
+.cwp_h5_q_down {
+  grid-area: cwp_h5_q_down;
+}
+
+.cwp_h5_q_across {
+  grid-area: cwp_h5_q_across;
+}
+
+.cwp_q_down_container{
+  grid-area: cwp_q_down_container;
+  width: 50vw;
+}
+
+.cwp_q_across_container{
+  grid-area: cwp_q_across_container;
+  width: 50vw;
+}
+
+.cwp_q_span {
+	position: relative;
+  text-align: left;
+}
+
+.cwp_b_button {
+	height: 30px;
+  margin-left: 2px;
+  margin-right: 2px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	border-radius: 16px;
+  cursor: pointer;
+
+}
+
+.cwp_p_button {
+	width: 40%;
+	height: 40%;
+	margin-top: 30%;
+	margin-bottom: 30%;
+	margin-left: 30%;
+	margin-right: 30%;
+	border-radius: 10px;
+	font-size: medium;
+  cursor: pointer;
+}
+
+.cwp_cell_wrapper {
+	position: relative;
+}
+
+#cwp_b_hint{
+  background-color: var(--MyDarkerBlue);
+  border-radius: 10px;
+}
+
+.cwp_cell {
+	width: 4.27%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	font-size: medium;
+	font-weight: bold;
+	text-transform: uppercase;
+	cursor: crosshair;
+}
+
+.cwp_cell_row {
+	height: 4.96%;
+}
+
+.cwp_cell_disable {
+	border: hidden;
+	padding: 1.99px;
+	background-color: var(--MyWhite);
+	cursor: default;
+  width: 6vw;
+  height: 4vh;
+}
+
+.cwp_cell_enable {
+  border-radius: 10px;
+  width: 6vw;
+  height: 4vh;
+} 
+
+.cwp_q_index_span {
+	position: absolute;
+	left: 5px;
+  top: 0.5px;
+	z-index: 2;
+	font-size: x-small;
+	z-index: 2;
+}
+
+.cwp_cell_sol_true {
+	color: green;
+}
+
+.cwp_cell_sol_false {
+	color: red;
+}
+
+
+.allowGeo{
+  margin: 5%;
+}
+
+.location_select , .category_select{
+  padding: 3px;
+  border-radius: 8px;
+  width: 30vw;
+}
+  
+}
